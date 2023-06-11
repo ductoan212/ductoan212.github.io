@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ductoan212.github.io/static/css/main.d17be24a.css",
+    "main.js": "/ductoan212.github.io/static/js/main.13fdf1e4.js",
+    "static/js/787.a39fab81.chunk.js": "/ductoan212.github.io/static/js/787.a39fab81.chunk.js",
+    "static/media/intro-image-no-bg.png": "/ductoan212.github.io/static/media/intro-image-no-bg.e430d675e08d6367737c.png",
+    "static/media/intro-image.jpg": "/ductoan212.github.io/static/media/intro-image.96277e0a255f2d43972a.jpg",
+    "index.html": "/ductoan212.github.io/index.html",
+    "main.d17be24a.css.map": "/ductoan212.github.io/static/css/main.d17be24a.css.map",
+    "main.13fdf1e4.js.map": "/ductoan212.github.io/static/js/main.13fdf1e4.js.map",
+    "787.a39fab81.chunk.js.map": "/ductoan212.github.io/static/js/787.a39fab81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d17be24a.css",
+    "static/js/main.13fdf1e4.js"
+  ]
+}
