@@ -1,6 +1,19 @@
 import styled from "styled-components";
 
-export const LandingPageWrapperStyled = styled.div``;
+export const LandingPageWrapperStyled = styled.div`
+  .section-header {
+    margin-bottom: 16px;
+
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+
+    filter: drop-shadow(2px -2px 0px var(--color-primary));
+  }
+`;
 
 export const IntroSectionWrapperStyled = styled.section`
   display: flex;
@@ -9,7 +22,7 @@ export const IntroSectionWrapperStyled = styled.section`
 
   .info-side {
     min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 100svh;
     padding: 10vw;
 
     flex: 1 1 65%;
@@ -69,31 +82,17 @@ export const IntroSectionWrapperStyled = styled.section`
     }
   }
 
-  @media only screen and (max-width: 1440px) {
-    .media-side {
-      display: flex;
-      align-items: flex-end;
-
-      .intro-image {
-        width: 100%;
-        height: fit-content;
-        bottom: 0;
-        transform: unset;
-        position: relative;
-      }
-    }
-  }
-
   @media only screen and (max-width: 768px) {
     flex-direction: column;
 
     .media-side {
       padding: 10vmin;
+      justify-content: center;
 
       .intro-image {
         padding-top: 16px;
         width: 100%;
-        height: 100%;
+        max-width: 250px;
 
         aspect-ratio: 1/1;
         border: 2px dashed #ffffff;
@@ -106,18 +105,6 @@ export const IntroSectionWrapperStyled = styled.section`
 export const AboutMeSectionWrapperStyled = styled.section`
   .about-me {
     padding: 32px max(32px, 10vw);
-
-    .about-me-header {
-      margin-bottom: 16px;
-
-      font-size: 32px;
-      text-align: center;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 8px;
-
-      filter: drop-shadow(2px -2px 0px var(--color-primary));
-    }
 
     .about-me-content {
       text-align: center;
@@ -205,6 +192,76 @@ export const AboutMeSectionWrapperStyled = styled.section`
 
       .personal-info-content {
         padding: 16px;
+      }
+    }
+  }
+`;
+
+export const LogoSectionWrapperStyled = styled.section`
+  background-color: var(--color-primary);
+
+  .short-name {
+    margin: auto;
+    padding: max(2.5vw, 32px) 5vw;
+
+    word-break: break-all;
+
+    color: var(--color-white);
+    text-align: center;
+    font-size: min(10vw, 64px);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+
+    /* filter: drop-shadow(0px 0px 2px var(--color-secondary)); */
+  }
+
+  img {
+    position: absolute;
+    height: 100%;
+    margin: auto;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+  }
+`;
+
+export const ContactSectionWrapperStyled = styled.section`
+  padding: 32px max(32px, 10vw);
+
+  .contact-list {
+    width: fit-content;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .contact-info-item {
+      list-style-type: none;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        font-size: 18px;
+        color: var(--color-white);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--color-primary);
+          text-decoration: underline;
+        }
+
+        .contact-icon {
+          width: 24px;
+          height: 24px;
+          color: var(--color-primary);
+        }
       }
     }
   }

@@ -1,13 +1,46 @@
 import images from "constants/images";
 import {
   AboutMeSectionWrapperStyled,
+  ContactSectionWrapperStyled,
   IntroSectionWrapperStyled,
   LandingPageWrapperStyled,
+  LogoSectionWrapperStyled,
 } from "./LandingPage.styled";
 import { Button } from "components";
-import { IconGrade, IconGraduation, IconSchool } from "constants/svgs";
+import {
+  IconGithub,
+  IconGrade,
+  IconGraduation,
+  IconLinkedin,
+  IconMail,
+  IconPhone,
+  IconSchool,
+} from "constants/svgs";
 
 const ABOUT_SECTION_ID = "about-section";
+
+const CONTACT_INFO = [
+  {
+    icon: <IconPhone />,
+    href: "tel:+84352222637",
+    content: "+84352222637",
+  },
+  {
+    icon: <IconMail />,
+    href: "mailto:ductoan2010200@gmail.com",
+    content: "ductoan2010200@gmail",
+  },
+  {
+    icon: <IconGithub />,
+    href: "https://github.com/ductoan212",
+    content: "github.com/ductoan212",
+  },
+  {
+    icon: <IconLinkedin />,
+    href: "https://www.linkedin.com/in/ductoan212",
+    content: "linkedin.com/in/ductoan212",
+  },
+];
 
 function LandingPage() {
   return (
@@ -33,11 +66,11 @@ function LandingPage() {
 
       <AboutMeSectionWrapperStyled id={ABOUT_SECTION_ID}>
         <div className="about-me">
-          <h2 className="about-me-header">About me</h2>
+          <h2 className="section-header">About me</h2>
           <p className="about-me-content">
             I am a front-end developer with a degree and nearly
-            <span className="highlight"> 2 years of experience in ReactJS</span>.
-            I specialize in creating interactive and visually appealing user
+            <span className="highlight"> 2 years of experience in ReactJS</span>
+            . I specialize in creating interactive and visually appealing user
             interfaces using{" "}
             <span className="highlight">
               HTML, CSS, JavaScript, and TypeScript.
@@ -84,7 +117,7 @@ function LandingPage() {
       </AboutMeSectionWrapperStyled>
 
       <section>
-        <h2>My experience</h2>
+        <h2 className="section-header">My experience</h2>
         <ul>
           <li>Lorem ipsum dolor sit amet.</li>
           <li>Lorem ipsum dolor sit amet.</li>
@@ -95,7 +128,7 @@ function LandingPage() {
       </section>
 
       <section>
-        <h2>My Portfolio</h2>
+        <h2 className="section-header">My Portfolio</h2>
         <ul>
           <li>Lorem ipsum dolor sit amet.</li>
           <li>Lorem ipsum dolor sit amet.</li>
@@ -105,16 +138,23 @@ function LandingPage() {
         </ul>
       </section>
 
-      <section>
-        <h2>My contact</h2>
-        <ul>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
+      <LogoSectionWrapperStyled>
+        <p className="short-name">DUCTOAN212</p>
+      </LogoSectionWrapperStyled>
+
+      <ContactSectionWrapperStyled>
+        <h2 className="section-header">Contact</h2>
+        <ul className="contact-list">
+          {CONTACT_INFO.map((info, index) => (
+            <li key={`${info.href}-${index}`} className="contact-info-item">
+              <a href={info.href} target="_blank" rel="noreferrer">
+                <span className="contact-icon">{info.icon}</span>
+                {info.content}
+              </a>
+            </li>
+          ))}
         </ul>
-      </section>
+      </ContactSectionWrapperStyled>
     </LandingPageWrapperStyled>
   );
 }
