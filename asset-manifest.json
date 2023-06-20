@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d17be24a.css",
-    "main.js": "/static/js/main.24cb6f38.js",
+    "main.css": "/static/css/main.5625fccb.css",
+    "main.js": "/static/js/main.9bbbb84a.js",
     "static/js/787.a39fab81.chunk.js": "/static/js/787.a39fab81.chunk.js",
     "static/media/intro-image-no-bg.png": "/static/media/intro-image-no-bg.e430d675e08d6367737c.png",
+    "static/media/laptop.jpg": "/static/media/laptop.20b95b1022228bf47229.jpg",
     "static/media/intro-image.jpg": "/static/media/intro-image.96277e0a255f2d43972a.jpg",
+    "static/media/icon-graduation.svg": "/static/media/icon-graduation.1b4415d012971143bd2153e93663bd4d.svg",
+    "static/media/icon-grade.svg": "/static/media/icon-grade.8ceda508222a967a546d33ae5a5416fe.svg",
+    "static/media/icon-school.svg": "/static/media/icon-school.a18c6f4356e010a3502dbc4773904640.svg",
     "index.html": "/index.html",
-    "main.d17be24a.css.map": "/static/css/main.d17be24a.css.map",
-    "main.24cb6f38.js.map": "/static/js/main.24cb6f38.js.map",
+    "main.5625fccb.css.map": "/static/css/main.5625fccb.css.map",
+    "main.9bbbb84a.js.map": "/static/js/main.9bbbb84a.js.map",
     "787.a39fab81.chunk.js.map": "/static/js/787.a39fab81.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d17be24a.css",
-    "static/js/main.24cb6f38.js"
+    "static/css/main.5625fccb.css",
+    "static/js/main.9bbbb84a.js"
   ]
 }
