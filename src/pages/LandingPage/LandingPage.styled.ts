@@ -5,6 +5,7 @@ export const LandingPageWrapperStyled = styled.div``;
 export const IntroSectionWrapperStyled = styled.section`
   display: flex;
   background-color: #2a2a2a;
+  position: relative;
 
   .info-side {
     min-height: 100vh;
@@ -97,6 +98,113 @@ export const IntroSectionWrapperStyled = styled.section`
         aspect-ratio: 1/1;
         border: 2px dashed #ffffff;
         border-radius: 50%;
+      }
+    }
+  }
+`;
+
+export const AboutMeSectionWrapperStyled = styled.section`
+  .about-me {
+    padding: 32px max(32px, 10vw);
+
+    .about-me-header {
+      margin-bottom: 16px;
+
+      font-size: 32px;
+      text-align: center;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+
+      filter: drop-shadow(2px -2px 0px var(--color-primary));
+    }
+
+    .about-me-content {
+      text-align: center;
+      color: var(--color-gray);
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.5;
+
+      .highlight {
+        color: var(--color-primary);
+        font-weight: 500;
+      }
+    }
+  }
+
+  .personal-info-wrapper {
+    display: flex;
+    height: fit-content;
+    align-items: stretch;
+
+    .laptop-image,
+    .personal-info-content {
+      flex: 0 0 50%;
+    }
+
+    .laptop-image {
+      img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+      }
+    }
+
+    .personal-info-content {
+      padding-inline: 24px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      li {
+        padding: 16px;
+
+        flex: 1 1 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        list-style: none;
+        background-color: var(--color-primary);
+
+        .icon {
+          width: 48px;
+          height: 48px;
+
+          svg {
+            width: 100%;
+            height: 100%;
+
+            color: var(--color-white);
+            stroke: var(--color-white);
+          }
+        }
+
+        .content {
+          font-weight: 300;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .personal-info-wrapper {
+      flex-direction: column;
+
+      .laptop-image {
+        height: 250px;
+        flex: unset;
+      }
+
+      .personal-info-content {
+        padding: 16px;
       }
     }
   }
