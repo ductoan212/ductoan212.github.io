@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8b80d09.css",
-    "main.js": "/static/js/main.841c38ff.js",
+    "main.css": "/static/css/main.2f72b57d.css",
+    "main.js": "/static/js/main.450f3b8d.js",
     "static/js/787.a39fab81.chunk.js": "/static/js/787.a39fab81.chunk.js",
     "static/media/intro-image-no-bg.png": "/static/media/intro-image-no-bg.e430d675e08d6367737c.png",
     "static/media/laptop.jpg": "/static/media/laptop.20b95b1022228bf47229.jpg",
     "static/media/intro-image.jpg": "/static/media/intro-image.96277e0a255f2d43972a.jpg",
+    "static/media/uit-logo.png": "/static/media/uit-logo.ac40d7d9e215c4afd6cc.png",
     "static/media/logo-black.png": "/static/media/logo-black.00a577b9b79dffef5195.png",
     "static/media/logo.png": "/static/media/logo.6615d51968c1a87146ce.png",
-    "static/media/icon-graduation.svg": "/static/media/icon-graduation.1b4415d012971143bd2153e93663bd4d.svg",
+    "static/media/icon-graduation.svg": "/static/media/icon-graduation.55c4ab85d2a860e7c2605d65571ea3ab.svg",
+    "static/media/icon-technology.svg": "/static/media/icon-technology.153e9678a4079ced0cb2f29a73d4933a.svg",
     "static/media/icon-grade.svg": "/static/media/icon-grade.8ceda508222a967a546d33ae5a5416fe.svg",
     "static/media/icon-school.svg": "/static/media/icon-school.a18c6f4356e010a3502dbc4773904640.svg",
+    "static/media/icon-programming-language.svg": "/static/media/icon-programming-language.badc1acb336f07fe496826dd366f06cc.svg",
     "static/media/icon-github.svg": "/static/media/icon-github.3f356e3b120256bfe97c5c5534045858.svg",
     "static/media/icon-phone.svg": "/static/media/icon-phone.e55eb0ca33dbbe1111870a6eb91f812f.svg",
     "index.html": "/index.html",
+    "static/media/bg-full-web.svg": "/static/media/bg-full-web.f7d040081326541fcd38e4df0b229783.svg",
     "static/media/icon-linkedin.svg": "/static/media/icon-linkedin.62be41379a88d6082783bf9cdb6338db.svg",
     "static/media/icon-mail.svg": "/static/media/icon-mail.03332d7a97b0dcd72ad8d4ff8dbacc50.svg",
-    "main.e8b80d09.css.map": "/static/css/main.e8b80d09.css.map",
-    "main.841c38ff.js.map": "/static/js/main.841c38ff.js.map",
+    "static/media/pattern.svg": "/static/media/pattern.0dc64123b448bd00b5ef6be41e9e134a.svg",
+    "main.2f72b57d.css.map": "/static/css/main.2f72b57d.css.map",
+    "main.450f3b8d.js.map": "/static/js/main.450f3b8d.js.map",
     "787.a39fab81.chunk.js.map": "/static/js/787.a39fab81.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8b80d09.css",
-    "static/js/main.841c38ff.js"
+    "static/css/main.2f72b57d.css",
+    "static/js/main.450f3b8d.js"
   ]
 }
