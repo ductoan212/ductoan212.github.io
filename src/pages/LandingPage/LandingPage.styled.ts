@@ -1,6 +1,13 @@
+import { svgs } from "constants/svgs";
 import styled from "styled-components";
 
 export const LandingPageWrapperStyled = styled.div`
+  background: url(${svgs.backgroundApp});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 100vh;
+  background-position-y: 100svh;
+
   .section-header {
     margin-bottom: 16px;
 
@@ -11,13 +18,13 @@ export const LandingPageWrapperStyled = styled.div`
     text-transform: uppercase;
     letter-spacing: 8px;
 
-    filter: drop-shadow(2px -2px 0px var(--color-primary));
+    filter: drop-shadow(2px 2px 0px var(--color-secondary-1));
   }
 `;
 
 export const IntroSectionWrapperStyled = styled.section`
   display: flex;
-  background-color: #2a2a2a;
+  background-color: var(--color-secondary-fade);
   position: relative;
 
   .info-side {
@@ -103,102 +110,171 @@ export const IntroSectionWrapperStyled = styled.section`
 `;
 
 export const AboutMeSectionWrapperStyled = styled.section`
-  .about-me {
-    padding: 32px max(32px, 10vw);
+  padding: 32px max(32px, 10vw);
 
-    .about-me-content {
-      text-align: center;
-      color: var(--color-gray);
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 1.5;
+  .about-me-content {
+    text-align: center;
+    color: var(--color-gray);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
 
-      .highlight {
-        color: var(--color-primary);
-        font-weight: 500;
-      }
+    .highlight {
+      color: var(--color-primary);
+      font-weight: 500;
     }
   }
+`;
 
-  .personal-info-wrapper {
+export const EducationSectionWrapperStyled = styled.section`
+  padding: 32px max(32px, 10vw);
+
+  .education-group {
+    width: fit-content;
+    margin: auto;
+
     display: flex;
-    height: fit-content;
-    align-items: stretch;
+    align-items: center;
+    gap: 32px;
 
-    .laptop-image,
-    .personal-info-content {
-      flex: 0 0 50%;
-    }
+    .left-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
 
-    .laptop-image {
-      img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
+      .uni-logo {
+        width: 128px;
+        height: 128px;
+        background-color: var(--color-white);
+        border-radius: 50%;
       }
     }
 
-    .personal-info-content {
-      padding-inline: 24px;
+    .divider {
+      height: 128px;
+      width: 1px;
+      background-color: var(--color-white);
+    }
 
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-
-      li {
-        padding: 16px;
-
-        flex: 1 1 1px;
+    .right-side {
+      .education-info-item {
+        font-size: 16px;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 12px;
 
-        list-style: none;
-        background-color: var(--color-primary);
-
-        .icon {
-          width: 48px;
-          height: 48px;
-
-          svg {
-            width: 100%;
-            height: 100%;
-
-            color: var(--color-white);
-            stroke: var(--color-white);
-          }
+        &:not(:first-child) {
+          margin-top: 16px;
         }
 
-        .content {
-          font-weight: 300;
-          font-size: 18px;
-          text-align: center;
+        svg {
+          width: 24px;
+          height: 24px;
+
+          flex: 0 0 24px;
+          margin-right: 16px;
         }
       }
     }
   }
 
   @media only screen and (max-width: 768px) {
-    .personal-info-wrapper {
+    .education-group {
       flex-direction: column;
 
-      .laptop-image {
-        height: 250px;
-        flex: unset;
-      }
-
-      .personal-info-content {
-        padding: 16px;
+      .divider {
+        width: 128px;
+        height: 1px;
       }
     }
   }
 `;
 
+export const ExperienceSectionWrapperStyled = styled.section`
+  padding: 32px max(32px, 10vw);
+
+  .experience-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    .experience-item {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      .time-line {
+        flex: 1 1 0px;
+        text-align: right;
+      }
+
+      .company-logo {
+        width: 100px;
+        height: 100px;
+
+        flex: 0 0 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+
+        background-color: var(--color-white);
+      }
+
+      .company-name {
+        flex: 1 1 0px;
+      }
+    }
+
+    .step-maker {
+      height: 64px;
+      border-left: 2px dashed var(--color-white);
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .experience-group {
+      .experience-item {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+    }
+  }
+`;
+
+export const SkillsSectionWrapperStyled = styled.section`
+  padding: 32px max(32px, 10vw);
+
+  .skills-group {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+`;
+
+export const ProjectSectionWrapperStyled = styled.section`
+  padding: 32px max(32px, 10vw);
+
+  .projects-group {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 425px) {
+  }
+`;
+
 export const LogoSectionWrapperStyled = styled.section`
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary-fade);
 
   .short-name {
     margin: auto;
@@ -206,14 +282,12 @@ export const LogoSectionWrapperStyled = styled.section`
 
     word-break: break-all;
 
-    color: var(--color-white);
+    color: var(--color-primary);
     text-align: center;
     font-size: min(10vw, 64px);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 8px;
-
-    /* filter: drop-shadow(0px 0px 2px var(--color-secondary)); */
   }
 
   img {
