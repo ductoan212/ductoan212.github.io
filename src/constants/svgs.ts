@@ -10,5 +10,6 @@ export { ReactComponent as IconGithub } from "assets/svgs/icon-github.svg";
 export { ReactComponent as IconLinkedin } from "assets/svgs/icon-linkedin.svg";
 export { ReactComponent as IconTechnology } from "assets/svgs/icon-technology.svg";
 export { ReactComponent as IconProgrammingLanguage } from "assets/svgs/icon-programming-language.svg";
+export { ReactComponent as IconMenu } from "assets/svgs/icon-menu.svg";
 
 export const svgs = { backgroundApp, patternBG };

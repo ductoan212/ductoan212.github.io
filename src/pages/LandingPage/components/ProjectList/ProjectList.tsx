@@ -7,11 +7,10 @@ function ProjectList() {
       {Array(5)
         .fill(0)
         .map((_, index) => (
-          <ProjectInfo key={index} />
+          <ProjectInfo key={index} projIndex={index + 1} />
         ))}
     </ProjectListStyled>
   );
 }
 
 export { ProjectList };
-

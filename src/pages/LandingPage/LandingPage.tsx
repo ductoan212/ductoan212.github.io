@@ -1,6 +1,8 @@
+import { IconMenu } from "constants/svgs";
 import {
+  ButtonMenuStyled,
   LandingPageWrapperStyled,
-  LogoSectionWrapperStyled
+  LogoSectionWrapperStyled,
 } from "./LandingPage.styled";
 import {
   AboutMe,
@@ -55,9 +57,12 @@ function LandingPage() {
         <h2 className="section-header">Contact</h2>
         <ContactList />
       </section>
+
+      <ButtonMenuStyled>
+        <IconMenu />
+      </ButtonMenuStyled>
     </LandingPageWrapperStyled>
   );
 }
 
 export { LandingPage };
-

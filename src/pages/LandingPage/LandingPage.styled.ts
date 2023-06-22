@@ -55,3 +55,27 @@ export const LogoSectionWrapperStyled = styled.section`
     display: block;
   }
 `;
+
+export const ButtonMenuStyled = styled.button`
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: var(--color-secondary-1);
+  color: var(--color-white);
+  cursor: pointer;
+  border-radius: 50%;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+`;
